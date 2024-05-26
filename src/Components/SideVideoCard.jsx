@@ -4,7 +4,7 @@ import { demoThumbnailUrl, demoVideoUrl, demoChannelTitle, demoChannelUrl, demoV
 
 function SideVideoCard ({video: {id: {videoId}, snippet}}) {
   return (
-    <div className='flex flex-row w-[34vw] h-[9rem] bg-inherit rounded-3xl shadow-md shadow-black'>
+    <div className='flex flex-row w-[34vw] h-[7rem] bg-inherit rounded-3xl shadow-md shadow-black'>
         <Link to={videoId ? `http://localhost:5173/video/${videoId}` : demoVideoUrl} className='w-[12rem] h-[7rem] rounded-2xl my-auto'>
             <img src={snippet?.thumbnails?.high?.url} alt="" className='w-full h-full rounded-2xl object-cover'/>
         </Link>
